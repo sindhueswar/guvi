@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+  <link rel="stylesheet" href ="style.css">
+  <link rel="stylesheet" href ="stylesheet.scss">
+  <title>Sign Up Page</title>
+</head>
+<body>
+  <div class="container ">
+    <h1>Sign Up</h1>
+    <form action="submit-form.php" method="POST">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" min="18" max="100" id="age" name="age" placeholder="Enter your age" required>
+      </div>
+      <div>
+        <label for="contact">Contact:</label>
+        <input type="number" id="contact" name="contact" placeholder="Enter your contact details" pattern="[1-9]{1}[0-9]{9}" required>
+      </div>
+      <button type="submit" id="signupBtn">Sign Up</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"> </script>
+</body>
+</html>
